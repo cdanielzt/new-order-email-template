@@ -1,38 +1,17 @@
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-	<title>Pedido</title>
+	<title>Nuevo Pedido</title>
 	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
-    <!-- Green primary #11B009
-    blanco
-    Gray-dark #15161D
-    Color dark #333
-    gray dark light#1E1F29 -->
   <style>
     body{
       font-family: 'Open Sans', sans-serif;
       color: #1E1F29;
+      margin: 0;
     }
-    h1{
-      margin-top: 40px;
-    }
-    hr{
-      border-top: 1px solid whitesmoke;
-    }
-    th{
-      padding: 10px;
-      font-weight: 400;
-      color: gray;
-    }
-    td{
-      padding: 10px;
-      font-weight: bold;
-      color: #1E1F29;
-    }
-    
   </style>
 </head>
 
@@ -40,79 +19,101 @@
 
 
   <header>
-    <h1>Tienes un nuevo pedido de <?php echo $nombres;?></h1>
+    <div style="height: 15vh; background-color:  #15161D;">
+
+    </div>
+    <h1 style="margin-top: 40px; text-align: center; color: #333;">Tienes un nuevo pedido de <?php echo $nombres;?></h1>
   </header>
-  <hr>
-  <table>
+
+  <div style="margin: 0 auto; width: 600px; max-width: 600px;">
+  <table style="width: 100%">
     <thead>
       <tr>
-        <th><span>Fecha del pedido</th>
-        <th><span>ID de pedido</span></th>
-        <th><span>Método</span></th>
+        <th style="padding: 5px 10px; font-weight: 400; color: gray; text-align: left;"><span>Fecha del pedido</th>
+        <th style="padding: 5px 10px; font-weight: 400; color: gray; text-align: left;"><span>ID de pedido</span></th>
+        <th style="padding: 5px 10px; font-weight: 400; color: gray; text-align: left;"><span>Método</span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>25/08/2021<?php echo $fecha; ?></td>
-        <td><?php echo $id; ?></td>
-        <td><?php echo $fecha; ?></td>
+        <td style="padding: 5px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;">25/08/2021<?php echo $fecha; ?></td>
+        <td style="padding: 5px 10px; font-weight: bold; font-size: 14px;  color: #333; text-align: left;">37876<?php echo $id; ?></td>
+        <td style="padding: 5px 10px; font-weight: bold; font-size: 14px;  color: #333; text-align: left;">Tarjeta de crédito<?php echo $fecha; ?></td>
       </tr>
      
     </tbody>
   </table>
-  <hr>
-
-<div class="table-title">
-<h3>Datos de Contacto</h3>
-</div>
-
-<ul class="lista-datos">
-  <li> Nombres: <?php echo $nombres; ?>   </li>
-  <li> Apellidos: <?php echo $apellidos; ?>   </li>
-  <li> Celular: <?php echo $celular; ?>   </li>
-  <li> Email: <?php echo $email; ?>   </li>
-  <li> Direccion: <?php echo $direccion; ?>   </li>
-  <li> Ciudad: <?php echo $ciudad; ?>   </li>
-  <li> Localidad: <?php echo $localidad; ?>   </li>
-  <li> Notas: <?php echo $notas; ?>   </li>
-  <li> Fecha: <?php echo $fecha; ?>   </li>
-  <li> Metodo: <?php echo $metodo; ?>   </li>
-  <li> Estado: <?php echo $estado; ?>   </li>
-  <li> Total: <?php echo $total; ?>   </li>
-</ul>
-
-<div>
-<h3>Pedido</h3>
 </div>
 
 
-<table>
-            <thead>
-                  <tr>
-                        <th class="text-left">Id</th>
-                        <th class="text-left">Nombre</th>
-                        <th class="text-left">Precio Anterior</th>
-                        <th class="text-left">Precio</th>
-                  </tr>
-            </thead>
-           <tbody class="table-hover">
-                  <tr>
-                      <td class="text-left">January</td>
-                      <td class="text-left">$ 50,000.00</td>
-                      <td class="text-left">$ 50,000.00</td>
-                      <td class="text-left">$ 50,000.00</td>>
-                  </tr>
-          </tbody>
-</table>
+<h3 style="text-align: center; font-size: 22px; font-size: 22px;">Pedido</h3>
+<table style="margin: 0 auto; width: 600px; ">
+  <thead>
+      <tr>
+        <th style="padding: 8px 10px; font-weight: 400; color: gray; text-align: left;" colspan="1">Id</th>
+        <th style="padding: 8px 10px; font-weight: 400; color: gray; text-align: left;" colspan="3">Nombre</th>
+        <th style="padding: 8px 10px; font-weight: 400; color: gray; text-align: left;" colspan="2">Precio</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="1">456776</td>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="3">Sennheiser HD-280 PRO Audífonos de diadema </td>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="2"> $50,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="1">456776</td>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="3">Sennheiser HD-280 PRO Audífonos de diadema </td>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="2"> $50,000.00</td>
+      </tr>
+      <tr>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="1"></td>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: right;" colspan="3">Total</td>
+        <td style="padding: 16px 10px; font-weight: bold; font-size: 14px; color: #333; text-align: left;" colspan="2"> $50,000.00</td>
+      </tr>
+  </tbody>
+  </table>
 
 
-<div>
+  <h3 style="text-align: center; font-size: 22px;">Datos de Contacto</h3>
+ <div style="margin: 0 auto">
+  <div style="background-color: whitesmoke; margin: auto; max-width: 600px; display: flex;">
+    <div style="padding: 20px; width: 60%;">
+      <h4 style="font-weight: bold;"> Datos del cliente</h4>
+      <table>
+        <tr>
+          <td style="font-size: 14px;font-weight: bold; color: #333; padding: 5px 0;">Nombre:</td> <td style="font-size: 14px; padding-left: 15px;">Carlos Daniel</td>
+        </tr>
+        <tr>
+          <td style="font-size: 14px;font-weight: bold; color: #333; padding: 5px 0;"">Apellidos:</td> <td style="font-size: 14px; padding-left: 15px;">Zapata Torres</td>
+        </tr>
+        <tr>
+          <td style="font-size: 14px;font-weight: bold; color: #333; padding: 5px 0;"">Celular:</td> <td style="font-size: 14px; padding-left: 15px;">9374 5491</td>
+        </tr>
+        <tr>
+          <td style="font-size: 14px;font-weight: bold; color: #333; padding: 5px 0;"">Email:</td> <td style="font-size: 14px; padding-left: 15px;"><a href="mailto:cdanielzt@gmail.com">cdanielzt@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td style="font-size: 14px;font-weight: bold; color: #333; padding: 5px 0;"">Estado:</td> <td style="font-size: 14px; padding-left: 15px;">Pagado</td>
+        </tr>
+        <tr>
+          <td style="font-size: 14px;font-weight: bold; color: #333; padding: 5px 0;"">Notas:</td> <td style="font-size: 14px; padding-left: 15px;">Tocar la puerta </td>
+        </tr>
+      </table>
 
-  <p class="total"> Total: $300 <?php echo $total;?> </p>
-  <br>
-  <a class="btn" href="https://api.whatsapp.com/send?phone=${celular}&text=Hola,%20%20%C2%BF%20como%20estas%20?%20Recibimos%20tu%20pedido%20,%20muchas%20gracias%20por%20comprar%20en%20Jaure%20Ventas"> Whatsapp </a>
-
-</div>
-
+    </div>
+    <div style="padding: 20px; width: 40%;"">
+      <h4 style="font-weight: bold;"> Dirección</h4>
+      <p style="font-size: 14px;">Copacabana 87120. Montevideo, Montevideo. 12500<?php echo $direccion; ?></p>
+    </div>
+  </div>
+ </div>
+  
+ <div style="display: flex;">
+  <button style="padding: 12px; color: white; background-color: #25C541; border-style: none; border-radius: 12px; margin: 30px auto; font-size: 15px; font-weight: bold;" href="https://api.whatsapp.com/send?phone=${celular}&text=Hola,%20%20%C2%BF%20como%20estas%20?%20Recibimos%20tu%20pedido%20,%20muchas%20gracias%20por%20comprar%20en%20Jaure%20Ventas"> Enviar Whatsapp </button>
+ </div>
   </body>
-  </html>
+  <div style="height: 15vh; background-color:  #15161D;">
+
+  </div>
+</html>
